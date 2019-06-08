@@ -12,8 +12,9 @@
 		21CC172522AB349F00BB40C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21CC172322AB349F00BB40C7 /* Main.storyboard */; };
 		21CC172722AB34A000BB40C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21CC172622AB34A000BB40C7 /* Assets.xcassets */; };
 		21CC172A22AB34A000BB40C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21CC172822AB34A000BB40C7 /* LaunchScreen.storyboard */; };
-		21CC173522AB3EA200BB40C7 /* InputCityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21CC173422AB3EA200BB40C7 /* InputCityViewController.swift */; };
 		21CC173722AB431F00BB40C7 /* WeatherDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21CC173622AB431F00BB40C7 /* WeatherDataModel.swift */; };
+		21F0582B22AC28B30043A4B7 /* ChangeCityDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F0582A22AC28B30043A4B7 /* ChangeCityDelegate.swift */; };
+		21F0582D22AC64110043A4B7 /* ChangeCityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F0582C22AC64110043A4B7 /* ChangeCityViewController.swift */; };
 		7C535B44B1312B8C30D9ACBC /* Pods_WeatherNow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 841276ACFBBEA34D01DEB1A4 /* Pods_WeatherNow.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,8 +26,9 @@
 		21CC172622AB34A000BB40C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		21CC172922AB34A000BB40C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		21CC172B22AB34A000BB40C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		21CC173422AB3EA200BB40C7 /* InputCityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputCityViewController.swift; sourceTree = "<group>"; };
 		21CC173622AB431F00BB40C7 /* WeatherDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDataModel.swift; sourceTree = "<group>"; };
+		21F0582A22AC28B30043A4B7 /* ChangeCityDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeCityDelegate.swift; sourceTree = "<group>"; };
+		21F0582C22AC64110043A4B7 /* ChangeCityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangeCityViewController.swift; sourceTree = "<group>"; };
 		3483FB4123BE811F46926D1E /* Pods-WeatherNow.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeatherNow.debug.xcconfig"; path = "Target Support Files/Pods-WeatherNow/Pods-WeatherNow.debug.xcconfig"; sourceTree = "<group>"; };
 		841276ACFBBEA34D01DEB1A4 /* Pods_WeatherNow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeatherNow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		94096077D2A14435A28AC885 /* Pods-WeatherNow.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeatherNow.release.xcconfig"; path = "Target Support Files/Pods-WeatherNow/Pods-WeatherNow.release.xcconfig"; sourceTree = "<group>"; };
@@ -65,12 +67,11 @@
 		21CC171E22AB349F00BB40C7 /* WeatherNow */ = {
 			isa = PBXGroup;
 			children = (
+				21F0582922AC288D0043A4B7 /* Protocol */,
 				21CC173322AB34FE00BB40C7 /* Controller */,
 				21CC173222AB34F600BB40C7 /* View */,
 				21CC173122AB34E100BB40C7 /* Data Model */,
 				21CC171F22AB349F00BB40C7 /* AppDelegate.swift */,
-				21CC172122AB349F00BB40C7 /* ViewController.swift */,
-				21CC173422AB3EA200BB40C7 /* InputCityViewController.swift */,
 				21CC172622AB34A000BB40C7 /* Assets.xcassets */,
 				21CC172822AB34A000BB40C7 /* LaunchScreen.storyboard */,
 				21CC172B22AB34A000BB40C7 /* Info.plist */,
@@ -97,8 +98,18 @@
 		21CC173322AB34FE00BB40C7 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				21F0582C22AC64110043A4B7 /* ChangeCityViewController.swift */,
+				21CC172122AB349F00BB40C7 /* ViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		21F0582922AC288D0043A4B7 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				21F0582A22AC28B30043A4B7 /* ChangeCityDelegate.swift */,
+			);
+			path = Protocol;
 			sourceTree = "<group>";
 		};
 		343F7801E50F4213EEB2E12F /* Frameworks */ = {
@@ -243,8 +254,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				21CC173722AB431F00BB40C7 /* WeatherDataModel.swift in Sources */,
-				21CC173522AB3EA200BB40C7 /* InputCityViewController.swift in Sources */,
+				21F0582B22AC28B30043A4B7 /* ChangeCityDelegate.swift in Sources */,
 				21CC172222AB349F00BB40C7 /* ViewController.swift in Sources */,
+				21F0582D22AC64110043A4B7 /* ChangeCityViewController.swift in Sources */,
 				21CC172022AB349F00BB40C7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

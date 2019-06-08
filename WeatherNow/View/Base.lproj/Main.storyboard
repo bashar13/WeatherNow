@@ -87,10 +87,10 @@
             </objects>
             <point key="canvasLocation" x="824.63768115942037" y="756.69642857142856"/>
         </scene>
-        <!--Input City View Controller-->
+        <!--Change City View Controller-->
         <scene sceneID="8I5-PC-4KJ">
             <objects>
-                <viewController id="URY-fR-jvo" customClass="InputCityViewController" customModule="WeatherNow" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="URY-fR-jvo" customClass="ChangeCityViewController" customModule="WeatherNow" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OCI-PH-o9B">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -124,6 +124,9 @@
                                         </fragment>
                                     </attributedString>
                                 </state>
+                                <connections>
+                                    <action selector="getWeatherPressed:" destination="URY-fR-jvo" eventType="touchUpInside" id="naB-W6-fO5"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -142,6 +145,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="bcs-wO-Gqu"/>
                     </view>
+                    <connections>
+                        <outlet property="changeCityTextField" destination="lE2-yb-73G" id="lgI-vg-iIl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qnv-KQ-0yg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
