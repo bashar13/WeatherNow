@@ -37,8 +37,6 @@ class ViewController: UIViewController, CLLocationManagerDelegate, ChangeCityDel
         locationManager.startUpdatingLocation() //start getting location
         
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "City", style: .plain, target: self, action: #selector(navigationBarRightButtonTapped))
-        
-        
     }
     
     func userDesiredCityName(cityName: String) {

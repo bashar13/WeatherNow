@@ -1,18 +1,12 @@
 //
 //  ChangeCityViewController.swift
-//  WeatherApp
+//  WeatherNow
 //
-//  Created by Angela Yu on 23/08/2015.
-//  Copyright (c) 2015 London App Brewery. All rights reserved.
+//  Created by Khairul Bashar on 7/6/19.
+//  Copyright © 2019 Khairul Bashar. All rights reserved.
 //
 
 import UIKit
-
-
-//Write the protocol declaration here:
-protocol ChangeCityDelegate {
-    func userDesiredCityName(cityName: String)
-}
 
 class ChangeCityViewController: UIViewController {
     
