@@ -10,6 +10,6 @@
 
 import UIKit
 
-protocol ChangeCityDelegate {
+protocol ChangeCityDelegate: class {
     func userDesiredCityName(cityName: String)
 }

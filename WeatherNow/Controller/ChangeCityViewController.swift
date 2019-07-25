@@ -11,7 +11,7 @@ import UIKit
 class ChangeCityViewController: UIViewController {
     
     //Declare the delegate variable here:
-    var delegate : ChangeCityDelegate?
+    weak var delegate : ChangeCityDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
